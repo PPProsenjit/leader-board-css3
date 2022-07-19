@@ -109,6 +109,18 @@ courses style
     grid-template-columns: repeat(3, 1fr);
 }
 
+.course {
+
+    padding-right: 10%;
+    border: 2px solid rgb(220, 189, 189);
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(249, 249, 249));
+    color: #FFFFFF;
+    padding-left: 11px;
+    padding-right: 17.42px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin: 0 23px 0 0;
+}
 
 .course .course-banner img {
     width: 224px;
@@ -156,4 +168,59 @@ courses style
 
 .time-duration .clock {
     color: #FF4A60;
+}
+
+/*...................
+ Media Queries 
+ ....................*/
+
+/* only phone */
+@media only screen and (max-width:688px) {
+    .section-title {
+        text-align: center;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,
+    .blog,
+    .courses {
+        flex-direction: column;
+        text-align: center;
+        margin: 5px 0 0 0;
+    }
+
+    .course {
+        margin: 23px 0 0 0;
+    }
+
+    .blog-title {
+        padding-left: 90px;
+        text-align: center;
+    }
+
+}
+
+/* Tablet Devices */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
 }
