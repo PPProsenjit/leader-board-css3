@@ -109,7 +109,6 @@ courses style
     grid-template-columns: repeat(3, 1fr);
 }
 
-.course {}
 
 .course .course-banner img {
     width: 224px;
@@ -120,6 +119,10 @@ courses style
 .course-detail .course-title {
     Width: 94.83px;
     Height: 29.38px;
+}
+
+.course-author {
+    color: #ED6B4F;
 }
 
 .course-info {
